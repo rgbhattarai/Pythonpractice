@@ -46,4 +46,38 @@ b = "Hello, World!"
 print(b[:8])
 print(b[5:-5])
 
+data = [10,20,20,30,31,39]
+
+count =0
+counts = 0
+occurence=[]
+for x in data:
+    if x==20:
+       count = count + 1
+       occurence.append(count)
+    if x==30:
+       counts = counts + 1
+       occurence.append(counts)
+print(20,count, 30, counts)
+print(occurence)
+
+d1={}
+for x in data:
+    if x in d1:
+     d1[x] = d1[x]+1
+    else:
+     d1[x]=1
+print (d1)
+
+
+
+
+
+
+
+
+
+
+
+
 
