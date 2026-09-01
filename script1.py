@@ -46,7 +46,7 @@ b = "Hello, World!"
 print(b[:8])
 print(b[5:-5])
 
-data = [10,20,20,30,31,39]
+data = [10,40,40,40,30,30]
 
 count =0
 counts = 0
@@ -69,15 +69,48 @@ for x in data:
      d1[x]=1
 print (d1)
 
+## Max count
 
+data = [10,20,20,30,31,39]
 
+for x in data:
+     max=0
+     if max>x:
+         max=x
 
+print ('max number:', x)
 
+##Min value
 
+print(d1)
 
+## repeated number in dic
+maxk = 0
+max_num = 0
+for key in d1:
+    value = d1[key]
+    if value> maxk:
+        maxk = value
+        max_num = key
+print ('max value:', max_num, value)
 
+## count number of vowel
+input = 'Hello World'
+count = 0
+vowel = ['a','e','i','o','u']
+for ch in input:
+    print (ch)
+    if ch in vowel:
+     count = count+1
+print (count)
 
+## iterate on two list
 
-
-
-
+list1 = ['a','b','c']
+list2 = [1,2,3]
+d={}
+for i in range(len(list2)):
+    value1 = list1[i]
+    value2 = list2[i]
+    d[value1]= value2
+print (d)
