@@ -79,12 +79,30 @@ print(output2)
 ##Example: Input: [10,20,5,30,25] Output: 25
 
 input4=[10,20,5,30,25]
-num=input4[0]
-nums=input4[0]
-count=0
 
-for x in input4:
-    
-    if x>num and x> num+1:
-        nums = x
+input4.sort()
+print (input4[-2])
+
+##Find all duplicate elements in a list.
+##Example: Input: [1,2,3,2,4,5,1] Output: [1,2]
+
+input5= [1,2,3,2,4,5,1]
+output3=[]
+count = 0
+
+for  x in input5:
+    if x not in output3 and input5.count(x)>1:
+     output3.append(x)
+
+print (output3)
+
+##Rotate a list by K positions.
+##Example: Input: [1,2,3,4,5], K=2 Output: [4,5,1,2,3]
+
+input6= [1,2,3,4,5]
+k=2
+output4= input6[-k:] + input6[:-k]
+
+print(output4)
+
 
