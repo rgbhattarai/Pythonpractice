@@ -2,11 +2,9 @@
 ##Write a program to reverse a string without using slicing.
 ##Example: Input: “python” Output: “nohtyp
 
-input12='Python'
-reverse =' '
+input12='python'
+reverse = input12[::-1]
 
-for x in input12:
-    reverse = x+reverse
 print (reverse)
 
 ##Find the first non-repeating character in a string.
@@ -136,11 +134,11 @@ print(output6)
 ##Output: B
 
 input10={'A':100,'B':500,'C':300}
-max=0
+max1=0
 max_key=''
 for x in input10:
-    if input10[x] >= max:
-        max = input10[x]
+    if input10[x] >= max1:
+        max1 = input10[x]
         max_key = x
 print (max_key)
 
@@ -230,3 +228,94 @@ for x in range(0, number+1 ):
     a=b
     b=fibonacci
     print(fibonacci)
+
+##Find the first non-repeating number in a list.
+##Input: [1,2,3,4,5,1,2,3]
+##Output: 4
+
+input14= [1,2,3,4,5,1,2,3]
+
+for x in input14:
+    count =0
+    for y in input14:
+      if x==y:
+         count = count+1
+
+    if count==1:
+       print(x)
+       break
+
+## Find the Nth non-repeating number in a list.
+##Input: [1,2,3,4,5,1,2,3] N = 2
+##Output: 5
+
+input15=[1,2,3,4,5,1,2,3]
+n=2
+nth_number = 0
+for x in input15:
+    count =0
+    for y in input15:
+      if x==y:
+         count = count+1
+
+    if count==1:
+       nth_number = nth_number +1
+
+    if nth_number==n:
+        print(x)
+        break
+
+##Check whether two strings are anagrams.
+##Input: “listen” “silent”
+##utput: True
+
+word1 = 'listen'
+word2= 'silent'
+out_word1= {}
+out_word2= {}
+
+if len(word1) != len(word2):
+    print('word is not anagram')
+else:
+    print('same size continuous checking')
+for x in word1:
+    if x in  out_word1:
+        out_word1[x] = out_word1[x] +1
+    else:
+        out_word1[x] =1
+for y in word2:
+    if y in out_word2:
+        out_word2[y] = out_word2[y] + 1
+    else:
+        out_word2[y] =1
+
+print (out_word1)
+print(out_word2)
+
+if out_word1 == out_word2 :
+    print('Are this words anagram?:',True)
+else:
+    print('Are this words anagram?:',False)
+
+
+##Find missing number from array.
+##nput: [1,2,3,5]
+##Output: 4
+
+input15=[1,2,3,5]
+
+for x in range(1,6):
+ if x not in input15:
+    print(x)
+
+##Find top occurring element in a list.
+input16= [1,2,2,3,3,3,4]
+output8={}
+
+for x in input16:
+    if x in output8:
+     output8[x] = output8[x]+1
+    else:
+     output8[x]= 1
+max_output1 = max (output8, key = output8.get)
+print(max_output1)
