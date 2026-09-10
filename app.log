@@ -1,0 +1,31 @@
+App started 
+App started 
+App Started
+invalid email recieved: & C:/Users/bhatt/AppData/Local/Programs/Python/Python314/python.exe c:/Users/bhatt/OneDrive/Desktop/Python_learning/emailclean.py
+App stopped
+App started 
+App Started
+processed email : {'username': 'rushie', 'domain': 'gmail.com'}
+App stopped
+App started 
+App Started
+processed email : {'username': 'rushie', 'domain': 'gmail.com'}
+App stopped
+App started 
+App stopped
+App started 
+App started 
+App started 
+App Started
+processed email : {'username': 'fafa', 'domain': 'gmail.com'}
+App stopped
+App started 
+App Started
+invalid email recieved: gagagmail.com
+App started 
+App Started
+invalid email recieved: dfdfgmail.com
+App started 
+App Started
+invalid email recieved: hghgfmail.com
+App stopped
