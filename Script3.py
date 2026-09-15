@@ -32,5 +32,4 @@ output12=[]
 for i in input1:
   if i in input2:
     output12.append(i)
-
 print(output12)
