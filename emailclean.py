@@ -22,8 +22,8 @@ def is_valid_email (email):
     return '@' in email and '.' in email
     
 
-#print (is_valid_email("rushiegmail.com"))
-#print (is_valid_email("rushie@gmail.com"))
+#print (is_valid_email("rushgmail.com"))
+#print (is_valid_email("rush@gmail.com"))
 def process_user_email(email):
     write_log ("App Started")
    
